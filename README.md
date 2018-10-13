@@ -1,2 +1,2 @@
 # DSandAlgorithms
-Data structure and algorithms learings
+Data structure and algorithms learnings
