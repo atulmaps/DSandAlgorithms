@@ -12,6 +12,15 @@ public class SinglyLinkedList {
 			this.head = newNode;
 		}
 
+		public int size() {
+			int length = 0;
+			Node currentNode = this.head;
+			while (currentNode != null) {
+				length++;
+				currentNode = currentNode.getNext();
+			}
+			return length;
+		}
 		public boolean isEmpty() {
 			return this.head == null;
 		}
