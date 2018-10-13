@@ -12,6 +12,21 @@ public class SinglyLinkedList {
 			this.head = newNode;
 		}
 
+		public void insertAtEnd(int data) {
+			Node newNode = new Node(data);
+			if (this.isEmpty()) {
+				this.head = newNode;
+				return;
+			}
+			Node currentNode = this.head;
+			Node prev = null;
+			while(currentNode != null) {
+				prev = currentNode;
+				currentNode = currentNode.getNext();
+			}
+			prev.setNext(newNode);
+		}
+
 		public int size() {
 			int length = 0;
 			Node currentNode = this.head;
